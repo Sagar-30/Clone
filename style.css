@@ -847,3 +847,177 @@ reserch-section-div-bottom-parent {
    height: 3.2rem;
    width: 3.2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!Doctype HTML>
+<head ln="en">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <div class="container"> 
+    <div class="left-box">
+	  <h1> My Portfolio</h1>
+	  <p> When words become unclear, I shall focus with photograph.When images become inadequate,i shall be content with silence </p>
+	 </div>
+	 <div class="right-box">
+	  <div class="box1 box"><p> When words become unclear, I shall focus with photograph.When images become inadequate,i shall be content with silence </p></div>
+	  <div class="box2 box"><p> When words become unclear, I shall focus with photograph.When images become inadequate,i shall be content with silence </p></div>
+	  <!-- <div class="box3 box"></div>
+	  <div class="box4 box"></div>
+	  <div class="box5 box"></div>
+	  <div class="box6 box"></div>
+	  <div class="box7 box"></div>
+	 </div>
+ </div> -->
+</body>
+
+     <div class="container">
+	  <div class="left-box box1">
+     <h1> My Portfolio</h1>
+	  <p> When words become unclear, I shall focus with photograph.When images become inadequate,i shall be content with silence </p>
+	  </div>
+	  <div class="right-box box2">
+       <div class="right-box-row">
+	   <div class="right-box-row-row1">Sagar</div>
+	  <div class="right-box-row-row1">kaushik</div>
+	  <div class="right-box-row-row1">palwal</div>
+	  <div class="right-box-row-row1">Haryana</div>
+	   </div>
+	  <div class="right-box-row">kaushik</div>
+	  <div class="right-box-row">palwal</div>
+	  <div class="right-box-row">Haryana</div>
+	  
+	  
+	  </div>
+	 </div>
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+/*font-family: 'Edu SA Beginner', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap");
+
+*{
+margin:0;
+padding:0;
+box-type:border-box;
+}
+/* .conctainer{
+display:grid;
+height:100%;
+width:auto;
+grid-template-columns: 50% 50%;
+background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+color:white;
+} */
+/* .left-box{
+display:grid;
+height:160px;
+width:30%;
+border:1px solid white;
+}
+.left-box h1{
+      
+}
+.left-box p{
+font-family: 'Edu SA Beginner', cursive;
+line-height:1.2rem;
+}
+right-box{
+display:grid;
+height:60%
+width:auto;
+border: 1px dotted blue;
+background-color:grey;
+display:grid;
+}
+.box {
+height:300px;
+width:300px;
+border:1px solid black;
+background-color:black;
+grid-template-columns: 60px 100px 100px;
+
+}
+
+
+ */
+
+
+
+
+.container {
+display:flex;
+height:37.53rem;
+width:100%;
+justify-content:space-evenly ;
+align-items:center;
+
+background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+color:white;
+}
+.left-box{
+text-align:center;
+}
+.box1 {
+height:400px;
+width:400px;
+background-color:grey;
+}
+.left-box p{
+font-family: 'Edu SA Beginner', cursive;
+line-height:1.2rem;
+ padding:30px 0;
+}
+.left-box h1{
+ font-family: 'Poppins', sans-serif;
+padding-top:130px;
+}
+
+.right-box {
+
+}
+.box2 {
+height:400px;
+width:600px;
+background-color:grey;
+display:grid;
+align-content:space-evenly;
+}
+.right-box-row {
+ height:80px;
+ width:100%;
+ background-color:lightgrey;
+ grid-template-columns:repeat(4, 1fr);
+}
+.right-box-row-row1 {
+grid-template-columns:repeat(4, 1fr);
+justify-content:
+background-color:black;
+}
