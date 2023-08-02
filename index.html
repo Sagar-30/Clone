@@ -3,7 +3,7 @@
 <head>
    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="main-body">
 
    <!-- header section -->
 
@@ -27,9 +27,16 @@
             <li class="practice-navnar-right-li"> <a class="practice-navnar-right-ul-a1" href="#"> Resources</a></li>
             <li class="practice-navnar-right-li-border1"  ><a class="practice-navnar-right-ul-a2" href="#"> Sign in  </a></li>
             <li class="practice-navnar-right-li-border2" ><a class="practice-navnar-right-ul-a3" href="#"> Sign up  </a></li>
+			
          </ul>
+		
       </div>
    </nav>
+
+   <!-- For media query -->
+    <img class="Hamburger-icon" src="images/bars-solid.svg">
+     <a href="#"><img class="media-900px-icon" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5dc9062fc19d430f6909ced7_UHLogo_standard.png"></a>
+
 
    <!-- Main Section -->
 
@@ -51,13 +58,13 @@
       <p>The worlds best companies rely on UsabilityHub to make better design decisions.</p>
    </div>
    <div class="company-section-logo">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a0fccf7d78d81585_logo_amazon.png">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6b998def81a004629_logo_google.png">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6a0fccf20fed815e3_logo_taskrabbit.png">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6ee75f135fc390ab6_logo_airtable.png">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726c3102cf1ebf0c2c0_logo_box.png">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5f7fda34692422757a1b3768_godaddy.svg">
-      <img src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a09814d84e5a21c2_logo_asana.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a0fccf7d78d81585_logo_amazon.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6b998def81a004629_logo_google.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6a0fccf20fed815e3_logo_taskrabbit.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6ee75f135fc390ab6_logo_airtable.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726c3102cf1ebf0c2c0_logo_box.png">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5f7fda34692422757a1b3768_godaddy.svg">
+      <img  class="company-section-logo-img" src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a09814d84e5a21c2_logo_asana.png">
    </div>
 
    <!-- Reserch section -->
@@ -331,142 +338,4 @@
 </body>
 </html>
   
-  Emmit :- .container>.box#box-${box-$}*10==> (make 10 div with class-box and id-box1 and content- box-1)
-
-Css-grid==>   
-           can manage divs two dimensional(yeh y axis pr kaam krta hai normally jaise flex x axis pe kaam krta hai)
-
-	Display:grid;
-
- parent Properties:       gap
-			              grid-template-columns 
-                          grid-template-row
-						  justify-content
-						  align-content
-						  align-items
-
-            Gap==> gap between divs(row gap,col-gap,gap)
-			   Ex-
-			       gap:10px;
-				      OR
-					  row-gap:10px;
-					  col-gap:5px;
-
-			grid-template-columns==> Colums create and column width .
-
-			Ex- grid-template-columns: 100px 200px 300px; (3 colums bn jayenge)
-			    Note- jitne colums bnane hain utni values provide krdo.
-                        
-						 grid-template-columns: 
-						                       1fr 1fr 1fr; (3 column same width,we can increase the value of fr).
-											   2fr 1fr 1fr; (first col bada dusre chote puri screen mein)
-											   repeat(4, 1fr); (baar baar likhne ki jarurat nahi hai)
-											   repeat(auto-fill, 1fr); (jitni jagah milegi vha colum chle jayenge)
-											   200px auto;/auto auto ; (jitni width milegi utna bda ho jayega auto vala)
-
-  
-             grid-template-row==> rows ko height define
-			          Ex- grid-template-columns: 100px 200px 300px; (3 rows ko height mil jayegi aur jitni bhi bachengi auto adjust ho jayengi space mein)
-					                             grid-auto-rows:150px; (jin rows ko height nahi dii unko yeh height )
-
-
-			 justify-content==> X-asis i.e row ki direction mein items ko kahi bhi align kr skte hain
-
-			           Ex- justify-content: start;
-					                        center;
-					                        end;
-											space-around;
-											space-between;
-											space-evenly;
-
-
-			 align-content ==> vertically content ko align kr skte hain
-			               
-						   Ex- align-content: stretch; (Default)
-						                     center;
-											 start;  top mein chle jayenge
-											 end; last mein
-											 space-evenly;
-											 space-between;
-											 space-around;
-
-
-
-			 align-items ==> isse hm box ke ander ke items ko align kr skte hain. isse pure container ke item align honge.
-			     
-				           Ex- align-items:center;
-						                   start
-										   end;
-
-
-
-Child properties:
-                     justify-self
-					 align-self
-					 grid-column
-					 grid-row
-					 grid area
-
-
-			justify-self==> yeh box ko horizontally align krta hai individual ko 
-			           
-					    Ex- justify-self: start;
-
-
-			align-self==> yeh box ander ke content ko align krta hai.
-
-			            Ex- align-self:start;
-
-			grid-column==> agar kisi column ko ek se jyada column ki jagah deni hai toh.
-			       
-				          Ex- grid-column-start: 1;   
-						      grid-column-end:3;    (start 1 colum se hoga and 3rd column tak jayega matlab 2 column ki jagah lega).
-							     OR
-							  grid column: 1/3;  (start and end);
-							     OR
-							  grid-column: 1/ span 2; (span box count krega aur aage do colums tak chla jayega)
-							      OR
-							  grid-column: 1/ -1; (start to end)
-
-
-			 grid-row ==> agar row ko ek se jyada row ki jagah deni hai toh
-
-
-                          Ex- grid-row-start: 1;   
-						      grid-row-end:3;    (start 1 colum se hoga and 3rd row tak jayega matlab 2 row ki jagah lega).
-							     OR
-							  grid row: 1/3;  (start and end);
-							     OR
-							  grid-row: 1/ span 2; (span box count krega aur aage do rows tak chla jayega)
-					             OR
-							  grid-column: 1/ -1; (start to end)
-
-
-			  grid-area ==> dono grid row and colum ko define kr skte hain.
-			        
-					       EX- grid-area : 1 / 1 / 3 / 4; (row start / column start / row end / column end)
-
-
-				
-grid-template-area===>>> 
-                         isse hm name define kr skte hain aur fir layout bna skta hain;
-                               
-						 Ex-                    .container{
-						     grid-template-area:" header header header header" (yeh puri row bs header ko mil gayi)
-						                        " sidebar main main main "     (1 column sidebar ko 3 colums main ko )
-												" sidebar main main main "     (1 column sidebar ko 3 colums main ko )
-												" footer footer footer footer" ( puri row footer ke liye)
-                                                          }
-
-												#box-1 {
-												grid-area:header;
-												}
-												#box-2 {
-												grid-area:main;
-												}
-												#box3 {
-												grid-area:main;
-												}
-												#box-1 {
-												grid-area:footer;
-												}
+ 
