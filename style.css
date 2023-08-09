@@ -1145,6 +1145,7 @@ left: 8.3rem;
    height: auto;
    width: 100vw;
    float: right;
+   padding: 0 2rem;
 }
 .main-section-text-left-bottom-p {
     margin: 1rem 0;
@@ -1318,9 +1319,9 @@ flex-direction:column;
   width:auto;
    }
   .main-section-img-right img {
-   height: 80vw;
+   height: 75vw;
     width: 100vw;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
 }
 .main-section-text-left-p {
     font-size: 13px;
