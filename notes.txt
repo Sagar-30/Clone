@@ -57,4 +57,43 @@ Ab jiske ander yeh pehrgraph dalna hai uski id se usko access krke 'append child
 											classList.remove('');- class remove bhi kr skte hain by remove
 											classList.toggle(''); - agar class dali hai toh remove ho jayegi and agar remove hai toh daal jayegi
 	  
-	          
+
+
+
+Event handling => Allow to write js code which react t certain situations.
+    Ex - Click mouse button
+         Web page Loading
+	 A form field changes etc
+
+ Ways to handle event - 
+                       1. Event handler - seedha html ke andr dalte hain
+           		2.Event listner - js filee mein hi sab kuch hota hai
+1. Event handler - onclick
+ 		   onload
+		   onmouseover
+		   onmouseout
+		   onkeypress
+		   onkeydown
+		   onkeyup ==> (yha sabke samne on lagega)
+
+   Ex- <div onclick="myFunction()">Sagar</div> ==> yeh click par my function ko call kr dega.
+
+2. Event listner - 
+         steps - 1. access element in var
+                  2. var.addEventListner
+                   3. define Event ==(isme event name ke samne on nahi lgta Event handler ki tarah)
+        	    4. Now use callback function
+
+  ex= const event = document.getElementById('button');
+    event.addEventListner('click' ()=>{
+    console.log('clicked');
+});
+
+Note- mostly recommended event listner hota hai kyuki usme hm ek se jyada event lga sakte hain kisi element par aur usme hm sare events ka use kr ste hai jo event handler mein the.
+
+
+  Event Object = yeh sari details bta deta hain us event ki jaise kahan click kiya gya,
+   kitni baar click kiya , kya position thi etc.
+                 event.addEventListner('click' (a)=>{
+    console.log('details',a);
+       
